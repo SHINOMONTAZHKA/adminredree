@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-12476 -5163 9 9">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="photo" transform="translate(-12476 -5163)">
+    <circle id="Ellipse_8" data-name="Ellipse 8" class="cls-1" cx="0.929" cy="0.929" r="0.929" transform="translate(1.872 1.556)"/>
+    <path id="Path_59" data-name="Path 59" class="cls-1" d="M8.658,9.776l-.923,1.476a.259.259,0,0,1-.42.047l-.275-.275a.34.34,0,0,0-.48,0L4.888,12.573A.17.17,0,0,0,5,12.867h5.762a.17.17,0,0,0,.141-.264L9.018,9.776A.2.2,0,0,0,8.658,9.776Z" transform="translate(-3.333 -6.66)"/>
+    <path id="Path_60" data-name="Path 60" class="cls-1" d="M8.036,0H.964A.965.965,0,0,0,0,.965V8.035A.965.965,0,0,0,.964,9H8.035A.965.965,0,0,0,9,8.035V.965A.965.965,0,0,0,8.036,0Zm.033,6.517a.311.311,0,0,1-.31.31H1.241a.311.311,0,0,1-.31-.31V1.241a.311.311,0,0,1,.31-.31H7.759a.311.311,0,0,1,.31.31Z" transform="translate(0)"/>
+  </g>
+</svg>

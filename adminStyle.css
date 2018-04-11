@@ -1,0 +1,569 @@
+@font-face {
+	font-family: "Bebas Neue";
+	src: url("BebasNeue-Regular.otf");
+}
+
+body {
+    background: #F5F5F5;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+   margin: 0;
+   text-decoration: none;
+   color: #141414;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+   transition: .3s;
+}
+
+textarea {
+   resize: none;
+   outline: 0;
+}
+
+/* img {
+   max-width: 100%;
+   height: 100%;
+} */
+
+button {
+   outline: 0;
+   border: none;
+   cursor: pointer;
+}
+
+.padBlock {
+   padding: 0 50px;
+   width: 100%;
+   margin: 0 auto;
+   position: relative;
+}
+
+.adminBody {
+   background: #f5f5f5;
+   cursor: default;
+   color: #141414;
+}
+
+.inputFocus {
+   outline: 0;
+   height: 50px;
+   padding: 0 15px;
+   border: 1px solid #bebebe;
+   border-radius: 25px;
+   font-size: .85em;
+   color: #141414;
+   font-family: Ubuntu;
+   font-weight: 400;
+   -webkit-transition: .3s;
+   transition: .3s;
+   width: 100%;
+}
+
+
+.inputFocus::-webkit-input-placeholder {
+   color: #9c9c9c;
+   transition: .3s;
+}
+
+.inputFocus::-moz-placeholder {
+   color: #9c9c9c;
+   transition: .3s;
+}
+
+.inputFocus:-ms-input-placeholder {
+   color: #9c9c9c;
+   transition: .3s;
+}
+
+.inputFocus::placeholder {
+   color: #9c9c9c;
+   transition: .3s;
+}.inputFocus:focus::-webkit-input-placeholder{
+   color: #141414;
+}.inputFocus:focus::-moz-placeholder {
+   color: #141414;
+}.inputFocus:focus:-ms-input-placeholder{
+   color: #141414;
+}.inputFocus:focus::placeholder {
+   color: #141414;
+}.inputFocus:focus {
+   border: 1px solid #141414;
+}
+
+.button {
+   height: 50px;
+   display: block;
+   line-height: 49px;
+   text-align: center;
+   border-radius: 25px;
+   background-color: #6448f0;
+   color: #fff;
+   text-decoration: none;
+   font-size: 16px;
+   font-family: "Ubuntu";
+   -webkit-transition: .3s all;
+   transition: .3s all;
+   cursor: pointer;
+   padding: 0 20px;
+}
+
+.ActiveShadowButton {
+   height: 50px;
+   display: block;
+   line-height: 49px;
+   text-align: center;
+   border-radius: 25px;
+   background-color: #6448f0;
+   color: #fff;
+   text-decoration: none;
+   font-size: 16px;
+   font-family: "Ubuntu";
+   -webkit-transition: .3s all;
+   transition: .3s all;
+   width: 190px;
+   box-shadow: 0px 0px 18px #6448f0;
+}
+
+.ActiveShadowButton:hover{
+   box-shadow: none;
+}
+
+.button:hover {
+   box-shadow: 0px 0px 18px #6448f0;
+}
+
+.align-center {
+	display: flex;
+	align-items: center;
+}
+
+.paragraph-active {
+    color: #6448f0 !important;
+}
+
+.flex {
+	display: flex;
+}
+/*****************************************************************************************/
+
+/* header style */
+
+.wrapper-header {
+	box-shadow: 0 0 15px rgba(0, 0, 0, .1);
+    justify-content: center;
+    z-index: 5;
+    position: absolute;
+    background: #ffffff;
+    width: 100%;
+    top: 0;
+}
+
+.header {
+	width: 100%;
+	padding: 30px;
+	justify-content: space-between;
+}
+
+.header__logo {
+	width: 70px;
+}
+
+.header__logo img {
+    width: -webkit-fill-available;
+}
+
+.header__profile .icons img{
+	height: 24px;
+}
+
+.header__profile .icons a:not(:last-child) {
+	margin-right: 15px;
+}
+
+.header__profile .info p {
+	text-transform: uppercase;
+	font-family: "Bebas Neue";
+	font-size: 24px;
+}
+
+.header__profile .info span {
+	height: 25px;
+	width: 1px;
+	background: #BEBEBE;
+	margin: 0 20px;
+	position: relative;
+	top: -3px;
+}
+
+.header__profile .info img {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+/* ______________ */
+
+
+/* left menu */
+
+.menu-left {
+    width: 300px;
+    box-shadow: 0 0 46px rgba(0, 0, 0, .05);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: #ffffff;
+}
+
+.wrapper--dropdown-list {
+    padding: 175px 0 0 50px;
+}
+
+.dropdown-list p {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+    width: max-content;
+    margin-bottom: 20px;
+}
+
+.dropdown-list ul {
+    margin: 20px;
+    display: none;
+}
+
+.dropdown-list ul a{
+    font-family: ubuntu;
+    font-size: 14px;
+    color: #141414;
+    display: block;
+    margin-bottom: 10px;
+    width: max-content;
+}
+
+/* _____________ */
+
+/* main content */
+
+.wrapper_main-content {
+    justify-content: flex-end;
+    padding: 160px 60px 0 0;
+    width: 100vw;
+    height: 100%;
+}
+
+.main-content {
+    width: calc(100% - 360px);
+    flex-direction: column;
+    height: 100%;
+}
+
+.main-content__title {
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.main-content__title p {
+    font-family: Montserrat;
+    color: #141414;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.main-content__title__btn .button {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.main-content__wrapper-work-item {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.main-content__work-item {
+    width: calc(100% / 2 - 30px);
+    background: white;
+    padding: 30px 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 20px rgba(20, 20, 20, .05);
+    border-radius: 15px;
+    position: relative;
+    font-family: Montserrat;
+    font-weight: bold;  
+    color: #141414;
+    font-size: 17px;
+    flex-direction: column
+}
+
+.main-content__work-item span{
+    font-weight: 300;
+    color: #BEBEBE;
+    font-size: 13px;
+}
+
+.work-item__line {
+    position: absolute;
+    height: 50%;
+    width: 2px;
+    background: #2DA327;
+    left: 0;    
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.work-item__delete {
+    background: #6448f0;
+    width: 35px;
+    height: 35px;
+    border-radius: 0 15px 0 15px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    color: #fff !important;
+    display: flex;
+    justify-content: center;
+}.work-item__delete i {font-size: 22px;color: #fff;}
+/* _____________ */
+
+/* add project */
+
+.main-content__inpunt {
+    background: #fff;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(20, 20, 20, .05);
+    height: 100%;
+    margin-bottom: 60px;
+}
+
+.main-content__inpunt p {
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.wrapper_input {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.inputBlock {
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+    position: relative;
+}
+
+.inputBlock textarea {
+    height: 100%;
+    padding: 15px;
+}
+
+#textareaTitle {
+    height: 190px;
+}
+
+.inputBlock .addTextBtn {
+    margin-bottom: 20px;
+}
+
+.appendinfo {
+    margin-bottom: 20px !important;
+}
+
+.inputBlock .inputFocus:not(:last-child) {
+    margin-bottom: 20px;    
+}
+
+.wrapFile {
+    margin: 10px 0 35px 0;
+}
+
+.wrapFile label {
+    text-decoration: underline;
+    cursor: pointer;
+    margin: 0 10px 0 20px;
+    font-family: Ubuntu;
+    font-size: 14px;
+}
+
+.delFile svg {
+	height: 8px;
+	fill: none;
+    stroke: #141414;
+    cursor: pointer;
+}
+
+/* _____________ */
+
+.wrapper__editor-text {
+    position: relative;
+    margin-left: 40px;
+}
+
+.wrapper__editor-text p {
+    background: #bebebe;
+}
+
+.wrapper__editor-text .edit, .wrapper__editor-text .edit *{
+    width: 100%;
+    font-family: ubuntu;
+    font-size: 16px;
+    outline: 0;
+    color: #707070;
+    line-height: 25px;
+}
+
+.editor-circle {
+    position: absolute;
+    background: #6448f0;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    justify-content: center;
+    top: -5px;
+    left: -40px;
+}
+
+.editor-tools {
+    position: absolute;
+    cursor: default;
+    background: #6448f0;
+    height: 30px;
+    border-radius: 30px;
+    padding: 0 15px;
+    opacity: 0;
+    z-index: -1;
+    left: 10px;
+    transition: .3s;
+}
+
+.editor-tools__active {
+    left: 40px;
+    opacity: 1;
+    z-index: 1;
+}
+
+.editor-circle i {
+    transition: .3s;
+}
+.i__active {
+    transform: rotate(45deg);
+}
+
+.editor-tools svg:not(:last-child) {
+    margin-right: 10px;
+}
+
+.editor-tools svg {
+    width: 15px;
+    cursor: pointer
+}
+
+.editor-circle i {
+    color: #fff;
+    font-size: 22px;
+}
+
+.wrapper_popup-image {
+    position: fixed;
+    max-width: 500px;
+    box-shadow: 0 0 46px rgba(0, 0, 0, .07);
+    border-radius: 30px;
+    background: #fff;
+    z-index: 9;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: 0;
+    z-index: -1;
+    transition: .4s;
+}
+
+.wrapper_popup-image form {
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.wrapper_popup-image form h3 {
+    font-family: Montserrat;
+    margin-bottom: 10px;    
+}
+
+.wrapper_popup-image form p {
+    color: #BEBEBE;
+    font-family: Ubuntu;
+    width: 65%;
+    margin-bottom: 30px;
+}
+
+.wrapper_popup-image form .inputFocus {
+    margin-bottom: 30px;
+}
+
+.wrapper_popup-image form label.button {
+    text-decoration: none;
+    margin: 0;
+    width: calc(100% / 2 - 10px);
+}
+
+.wrapper_popup-image form .wrap-button {
+    justify-content: space-between;
+}
+
+.wrapper_popup-image form .wrap-button .button {
+    width: calc(100% / 2 - 10px);
+}
+
+.wrapper_popup-image form .wrap-button .close-button_pop {
+    background-color: transparent;
+    color: #BEBEBE;
+    border: 1px solid #BEBEBE;
+}.wrapper_popup-image form .wrap-button .close-button_pop:hover {box-shadow: none}
+
+#formAddPersonal {
+    display: flex;
+    justify-content: space-between;
+}
+
+#formAddPersonal .delFile {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    background: #6448f0;
+    cursor: pointer;
+    top: 0;
+    right: -30px;
+}
+
+#formAddPersonal .delFile p{
+    font-size: 20px;
+    margin-bottom: 0;
+    font-weight: normal;
+    font-family: none;
+    color: #fff;
+    line-height: 0;
+}
+
+#formAddPersonal .wrapFile label {
+    margin: 0;
+    text-decoration: none;
+}
