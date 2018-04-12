@@ -3,8 +3,7 @@ $(document).ready(function () {
 	var dropDownLink = $(".dropdown-list ul a"),
 		dropdownActive = $(".paragraph-active"),
 		dropdownList = $(".dropdown-list p"),
-		widthLeftMenu = $(".menu-left")
-	;
+		widthLeftMenu = $(".menu-left");
 
 	$(dropdownList).on("click", function (e){
 		var xx = $(this).next();
@@ -20,6 +19,11 @@ $(document).ready(function () {
 		
 	}
 
+	$("#sel").selecter({
+		label: ' Все',
+		cover: true
+	});
+
 	function readURL(input) {
 		
 		  if (input.files && input.files[0]) {
@@ -30,18 +34,21 @@ $(document).ready(function () {
 			}
 
 			reader.readAsDataURL(input.files[0]);
-		  }
-
 		}
 
-		$("#tinput").on("change", function() {
-			$("#formAddPersonal").append("<div class='inputBlock' style='width:auto; margin-right: 50px'>\
+	}
+
+		$("#showImage").on("change", function(e) {
+			var elem = $("#formAddPersonal").append("<div class='inputBlock' style='width:auto; margin-right: 50px'>\
 				<img src='' alt='' id='blah' height='300'>\
 				<div class='delFile'>\
 					<p>&#215;</p>\
 				</div>\
 			</div>")
 			readURL(this);
+			if ($(".inputBlock").length == 3) {
+				$(".inputBlock:last-child").remove();
+			}
 		})
 
 		$("body").on("click chenge", ".delFile", function (){

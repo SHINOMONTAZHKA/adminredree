@@ -1,102 +1,104 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet">
-    <title>Добавление персонала</title>
-    <link rel="stylesheet" href="adminStyle.css">
-    <script src="adminJavaScript.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="jquery.fs.selecter.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet">
+	<link rel="stylesheet" href="jquery.fs.selecter.css">
+	<title>Добавление персонала</title>
+	<link rel="stylesheet" href="adminStyle.css">
+	<script src="adminJavaScript.js"></script>
 </head>
 <body>
 
-    <header class="wrapper-header align-center">
+	<header class="wrapper-header align-center">
 
-        <div class="header align-center">
-            <div class="header__logo">
-                <a href="" class="align-center"><img src="redree.svg" alt="logo"></a>
-            </div>
-            <div class="header__profile align-center">
-                    <div class="icons align-center">
-                        <a href="">
-                            <img src="personal-icon.svg" alt="">
-                        </a>
-                        <a href="">
-                            <img src="notification-icon.svg" alt="">
-                        </a>
-                        <a href="">
-                            <img src="exit-icon.svg" alt="">
-                        </a>
-                    </div>
-                    <div class="info align-center">
-                        <span></span>
-                        <p>расул</p>
-                        <img src="" alt="">
-                    </div>
-            </div>
-        </div>
+		<div class="header align-center">
+			<div class="header__logo">
+				<a href="" class="align-center"><img src="redree.svg" alt="logo"></a>
+			</div>
+			<div class="header__profile align-center">
+					<div class="icons align-center">
+						<a href="">
+							<img src="personal-icon.svg" alt="">
+						</a>
+						<a href="">
+							<img src="notification-icon.svg" alt="">
+						</a>
+						<a href="">
+							<img src="exit-icon.svg" alt="">
+						</a>
+					</div>
+					<div class="info align-center">
+						<span></span>
+						<p>расул</p>
+						<img src="rasulbg.jpg" alt="">
+					</div>
+			</div>
+		</div>
 
-    </header>
+	</header>
 
 
-    <div class="menu-left">
-        <div class="wrapper--dropdown-list">
-            <div class="dropdown-list">
-                <p class="paragraph-active">Работа с сайтом</p>
-                <ul>
-                    <li><a href="admin.html">Проекты</a></li>
-                    <li><a href="" class="paragraph-active">Сотрудники</a></li>
-                    <li><a href="">Настройка</a></li>
-                </ul>
-            </div>
-            <div class="dropdown-list">
-                <p>Работа с заявками 2</p>
-                <ul>
-                    <li><a href="">Проекты 2</a></li>
-                    <li><a href="">Сотрудники 2</a></li>
-                    <li><a href="">Настройка 2</a></li>
-                </ul>
-            </div>
-            <div class="dropdown-list">
-                <p>Работа с проектами 3</p>
-                <ul>
-                    <li><a href="">Проекты 3</a></li>
-                    <li><a href="">Сотрудники 3</a></li>
-                    <li><a href="">Настройка 3</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+	<div class="menu-left">
+		<div class="wrapper--dropdown-list">
+			<div class="dropdown-list">
+				<p class="paragraph-active">Работа с сайтом</p>
+				<ul>
+					<li><a href="admin.html">Проекты</a></li>
+					<li><a href="" class="paragraph-active">Сотрудники</a></li>
+					<li><a href="">Настройка</a></li>
+				</ul>
+			</div>
+			<div class="dropdown-list">
+				<p>Работа с заявками 2</p>
+				<ul>
+					<li><a href="">Проекты 2</a></li>
+					<li><a href="">Сотрудники 2</a></li>
+					<li><a href="">Настройка 2</a></li>
+				</ul>
+			</div>
+			<div class="dropdown-list">
+				<p>Работа с проектами 3</p>
+				<ul>
+					<li><a href="">Проекты 3</a></li>
+					<li><a href="">Сотрудники 3</a></li>
+					<li><a href="">Настройка 3</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
 
-    <div class="wrapper_main-content flex">
-        <div class="main-content flex">
-            <div class="main-content__title align-center">
-                <p>Добавление сотрудника</p>
-                <div class="main-content__title__btn align-center">
-                     <div class="button">Добавить сотрудника</div>
-                </div>
-            </div>   
-            <div class="main-content__inpunt">
-                <p>Информация</p>
-                <form action="" method="POST" id="formAddPersonal">
-                    <div class="inputBlock">
-                        <input type="text" class="inputFocus" placeholder="Фамилия">
-                        <input type="text" class="inputFocus" placeholder="Имя">
-                        <input type="text" class="inputFocus" placeholder="Профессия">
-                        <div class="wrapFile">
-                            <label for="tinput" class="labelFile button">Добавить изображение</label>
-                            <input name="img_2" type="file" size="1" class="tinput" id="tinput" hidden>
-                        </div>
-                    </div>
-                </form>
-            </div> 
-        </div>
-    </div>
-    
+	<div class="wrapper_main-content flex">
+		<div class="main-content flex">
+			<div class="main-content__title align-center">
+				<p>Добавление сотрудника</p>
+				<div class="main-content__title__btn align-center">
+					 <div class="button">Добавить сотрудника</div>
+				</div>
+			</div>   
+			<div class="main-content__inpunt">
+				<p>Информация</p>
+				<form action="" method="POST" id="formAddPersonal">
+					<div class="inputBlock">
+						<input type="text" class="inputFocus" placeholder="Фамилия">
+						<input type="text" class="inputFocus" placeholder="Имя">
+						<input type="text" class="inputFocus" placeholder="Профессия">
+						<div class="wrapFile">
+							<label for="showImage" class="labelFile button">Добавить изображение</label>
+							<input name="img_2" type="file" size="1" class="tinput" id="showImage" hidden>
+						</div>
+					</div>
+				</form>
+			</div> 
+		</div>
+	</div>
+	
 </body>
 </html>

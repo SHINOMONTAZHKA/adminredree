@@ -1,195 +1,206 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet">
-    <title>Добавление проекта</title>
-    <link rel="stylesheet" href="adminStyle.css">
-    <script src="adminJavaScript.js"></script>
-    <script src="jquery.caret.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="jquery.fs.selecter.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet">
+	<link rel="stylesheet" href="jquery.fs.selecter.css">
+	<title>Добавление проекта</title>
+	<link rel="stylesheet" href="adminStyle.css">
+	<script src="adminJavaScript.js"></script>
+	<script src="jquery.caret.js"></script>
 </head>
 <body>
 
-    <header class="wrapper-header align-center">
+	<header class="wrapper-header align-center">
 
-        <div class="header align-center">
-            <div class="header__logo">
-                <a href="" class="align-center"><img src="redree.svg" alt="logo"></a>
-            </div>
-            <div class="header__profile align-center">
-                    <div class="icons align-center">
-                        <a href="">
-                            <img src="personal-icon.svg" alt="">
-                        </a>
-                        <a href="">
-                            <img src="notification-icon.svg" alt="">
-                        </a>
-                        <a href="">
-                            <img src="exit-icon.svg" alt="">
-                        </a>
-                    </div>
-                    <div class="info align-center">
-                        <span></span>
-                        <p>расул</p>
-                        <img src="" alt="">
-                    </div>
-            </div>
-        </div>
+		<div class="header align-center">
+			<div class="header__logo">
+				<a href="" class="align-center"><img src="redree.svg" alt="logo"></a>
+			</div>
+			<div class="header__profile align-center">
+				<div class="icons align-center">
+					<a href="">
+						<img src="personal-icon.svg" alt="">
+					</a>
+					<a href="">
+						<img src="notification-icon.svg" alt="">
+					</a>
+					<a href="">
+						<img src="exit-icon.svg" alt="">
+					</a>
+				</div>
+				<div class="info align-center">
+					<span></span>
+					<p>расул</p>
+					<img src="" alt="">
+				</div>
+			</div>
+		</div>
 
-    </header>
+	</header>
 
 
-    <div class="menu-left">
-        <div class="wrapper--dropdown-list">
-            <div class="dropdown-list">
-                <p class="paragraph-active">Работа с сайтом</p>
-                <ul>
-                    <li><a href="admin.html" class="paragraph-active">Проекты</a></li>
-                    <li><a href="">Сотрудники</a></li>
-                    <li><a href="">Настройка</a></li>
-                    <li><a href="">Блог</a></li>
-                </ul>
-            </div>
-            <div class="dropdown-list">
-                <p>Работа с заявками 2</p>
-                <ul>
-                    <li><a href="">Проекты 2</a></li>
-                    <li><a href="">Сотрудники 2</a></li>
-                    <li><a href="">Настройка 2</a></li>
-                </ul>
-            </div>
-            <div class="dropdown-list">
-                <p>Работа с проектами 3</p>
-                <ul>
-                    <li><a href="">Проекты 3</a></li>
-                    <li><a href="">Сотрудники 3</a></li>
-                    <li><a href="">Настройка 3</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+	<div class="menu-left">
+		<div class="wrapper--dropdown-list">
+			<div class="dropdown-list">
+				<p class="paragraph-active">Работа с сайтом</p>
+				<ul>
+					<li><a href="admin.html" class="paragraph-active">Проекты</a></li>
+					<li><a href="">Сотрудники</a></li>
+					<li><a href="">Настройка</a></li>
+					<li><a href="">Блог</a></li>
+				</ul>
+			</div>
+			<div class="dropdown-list">
+				<p>Работа с заявками 2</p>
+				<ul>
+					<li><a href="">Проекты 2</a></li>
+					<li><a href="">Сотрудники 2</a></li>
+					<li><a href="">Настройка 2</a></li>
+				</ul>
+			</div>
+			<div class="dropdown-list">
+				<p>Работа с проектами 3</p>
+				<ul>
+					<li><a href="">Проекты 3</a></li>
+					<li><a href="">Сотрудники 3</a></li>
+					<li><a href="">Настройка 3</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
 
-    <div class="wrapper_main-content flex">
-        <form method="POST" class="main-content flex">
-            <div class="main-content__title align-center">
-                <p>Добавление проекта</p>
-                <div class="main-content__title__btn align-center">
-                     <button class="button">Добавить проект</button>
-                </div>
-            </div>
-            <div class="main-content__inpunt">
-                <p>Информация</p>
-                <div class="wrapper_input flex">
-                    <div class="inputBlock">
-                        <input type="text" class="inputFocus" placeholder="Название прокта">
-                        <input type="text" class="inputFocus" placeholder="Ссылка на проект">
-                        <input type="text" class="inputFocus" placeholder="Клиент">
-                    </div>
-                    <div class="inputBlock">
-                        <input type="text" class="inputFocus" placeholder="Вид работы">
-                        <input type="text" class="inputFocus" placeholder="Год">
-                        <input type="text" class="inputFocus" placeholder="Над проектом работали">
-                    </div>
-                    <div class="inputBlock">
-                        <textarea name="" id="" placeholder="Задачи проекта" class="inputFocus"></textarea>
-                    </div>
-                </div>
-                <p>Описание проекта</p>
-                <div class="wrapper__editor-text">
-                    <div class="edit" contenteditable="true"></div>
-                    <div class="wrpper-editorText align-center">
-                        <div class="editor-circle align-center">
-                            <i class="material-icons">add</i>   
-                            <div class="editor-tools align-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="image-popup" viewBox="-12476 -5163 9 9">
-                                    <defs>
-                                        <style>
-                                        .cls-1 {
-                                            fill: #fff;
-                                        }
-                                        </style>
-                                    </defs>
-                                    <g id="photo" transform="translate(-12476 -5163)">
-                                        <circle id="Ellipse_8" data-name="Ellipse 8" class="cls-1" cx="0.929" cy="0.929" r="0.929" transform="translate(1.872 1.556)"/>
-                                        <path id="Path_59" data-name="Path 59" class="cls-1" d="M8.658,9.776l-.923,1.476a.259.259,0,0,1-.42.047l-.275-.275a.34.34,0,0,0-.48,0L4.888,12.573A.17.17,0,0,0,5,12.867h5.762a.17.17,0,0,0,.141-.264L9.018,9.776A.2.2,0,0,0,8.658,9.776Z" transform="translate(-3.333 -6.66)"/>
-                                        <path id="Path_60" data-name="Path 60" class="cls-1" d="M8.036,0H.964A.965.965,0,0,0,0,.965V8.035A.965.965,0,0,0,.964,9H8.035A.965.965,0,0,0,9,8.035V.965A.965.965,0,0,0,8.036,0Zm.033,6.517a.311.311,0,0,1-.31.31H1.241a.311.311,0,0,1-.31-.31V1.241a.311.311,0,0,1,.31-.31H7.759a.311.311,0,0,1,.31.31Z" transform="translate(0)"/>
-                                    </g>
-                                </svg>
+	<div class="wrapper_main-content flex">
+		<form method="POST" class="main-content flex">
+			<div class="main-content__title align-center">
+				<p>Добавление проекта</p>
+				<div class="main-content__title__btn align-center">
+					 <button class="button">Добавить проект</button>
+					<select name="type" id="sel" class="selecter">
+						<option value="0">Промо сайт</option>
+						<option value="1">Корпоративный сайт</option>
+						<option value="2">Сервис</option>
+						<option value="3">Интернет магазин</option>
+						<option value="4">Корпоративный сайт</option>
+						<option value="5">Мобильное приложение</option>
+						<option value="6">Разработка</option>
+					</select>
+				</div>
+			</div>
+			<div class="main-content__inpunt">
+				<p>Информация</p>
+				<div class="wrapper_input flex">
+					<div class="inputBlock">
+						<input type="text" class="inputFocus" placeholder="Название прокта">
+						<input type="text" class="inputFocus" placeholder="Ссылка на проект">
+						<input type="text" class="inputFocus" placeholder="Клиент">
+					</div>
+					<div class="inputBlock">
+						<input type="text" class="inputFocus" placeholder="Вид работы">
+						<input type="text" class="inputFocus" placeholder="Год">
+						<input type="text" class="inputFocus" placeholder="Над проектом работали">
+					</div>
+					<div class="inputBlock">
+						<textarea name="" id="" placeholder="Задачи проекта" class="inputFocus"></textarea>
+					</div>
+				</div>
+				<p>Описание проекта</p>
+				<div class="wrapper__editor-text">
+					<div class="edit" contenteditable="true"></div>
+					<div class="wrpper-editorText align-center">
+						<div class="editor-circle align-center">
+							<i class="material-icons">add</i>   
+							<div class="editor-tools align-center">
+								<svg xmlns="http://www.w3.org/2000/svg" class="image-popup" viewBox="-12476 -5163 9 9">
+									<defs>
+										<style>
+										.cls-1 {
+											fill: #fff;
+										}
+										</style>
+									</defs>
+									<g id="photo" transform="translate(-12476 -5163)">
+										<circle id="Ellipse_8" data-name="Ellipse 8" class="cls-1" cx="0.929" cy="0.929" r="0.929" transform="translate(1.872 1.556)"/>
+										<path id="Path_59" data-name="Path 59" class="cls-1" d="M8.658,9.776l-.923,1.476a.259.259,0,0,1-.42.047l-.275-.275a.34.34,0,0,0-.48,0L4.888,12.573A.17.17,0,0,0,5,12.867h5.762a.17.17,0,0,0,.141-.264L9.018,9.776A.2.2,0,0,0,8.658,9.776Z" transform="translate(-3.333 -6.66)"/>
+										<path id="Path_60" data-name="Path 60" class="cls-1" d="M8.036,0H.964A.965.965,0,0,0,0,.965V8.035A.965.965,0,0,0,.964,9H8.035A.965.965,0,0,0,9,8.035V.965A.965.965,0,0,0,8.036,0Zm.033,6.517a.311.311,0,0,1-.31.31H1.241a.311.311,0,0,1-.31-.31V1.241a.311.311,0,0,1,.31-.31H7.759a.311.311,0,0,1,.31.31Z" transform="translate(0)"/>
+									</g>
+								</svg>
 
-                                <svg xmlns="http://www.w3.org/2000/svg" class="video-popup" viewBox="-12460 -5163 11 9">
-                                    <defs>
-                                      <style>
-                                        .cls-1 {
-                                          fill: #fff;
-                                        }
-                                      </style>
-                                    </defs>
-                                    <path id="Path_61" data-name="Path 61" class="cls-1" d="M10.6,2.16H11V.683A.689.689,0,0,0,10.3,0H.7A.689.689,0,0,0,0,.683V2.16H.4a.325.325,0,0,1,.329.323V6.518A.325.325,0,0,1,.4,6.84H0V8.317A.689.689,0,0,0,.7,9h9.61A.689.689,0,0,0,11,8.317V6.84h-.4a.325.325,0,0,1-.329-.323V2.483A.325.325,0,0,1,10.6,2.16ZM6.6.72h.733v.72H6.6ZM5.133.72h.733v.72H5.133ZM3.667.72H4.4v.72H3.667ZM2.2.72h.733v.72H2.2ZM1.467,8.28H.733V7.56h.733Zm0-6.84H.733V.72h.733ZM2.933,8.28H2.2V7.56h.733Zm1.467,0H3.667V7.56H4.4Zm1.467,0H5.133V7.56h.733Zm1.467,0H6.6V7.56h.733Zm1.467,0H8.067V7.56H8.8Zm0-1.763a.325.325,0,0,1-.329.323H2.529A.325.325,0,0,1,2.2,6.517V2.483a.325.325,0,0,1,.329-.323H8.472a.325.325,0,0,1,.328.323Zm0-5.077H8.067V.72H8.8Zm1.467,6.84H9.533V7.56h.733ZM9.533,1.44V.72h.733v.72Z" transform="translate(-12460 -5163)"/>
-                                </svg>
+								<svg xmlns="http://www.w3.org/2000/svg" class="video-popup" viewBox="-12460 -5163 11 9">
+									<defs>
+									  <style>
+										.cls-1 {
+										  fill: #fff;
+										}
+									  </style>
+									</defs>
+									<path id="Path_61" data-name="Path 61" class="cls-1" d="M10.6,2.16H11V.683A.689.689,0,0,0,10.3,0H.7A.689.689,0,0,0,0,.683V2.16H.4a.325.325,0,0,1,.329.323V6.518A.325.325,0,0,1,.4,6.84H0V8.317A.689.689,0,0,0,.7,9h9.61A.689.689,0,0,0,11,8.317V6.84h-.4a.325.325,0,0,1-.329-.323V2.483A.325.325,0,0,1,10.6,2.16ZM6.6.72h.733v.72H6.6ZM5.133.72h.733v.72H5.133ZM3.667.72H4.4v.72H3.667ZM2.2.72h.733v.72H2.2ZM1.467,8.28H.733V7.56h.733Zm0-6.84H.733V.72h.733ZM2.933,8.28H2.2V7.56h.733Zm1.467,0H3.667V7.56H4.4Zm1.467,0H5.133V7.56h.733Zm1.467,0H6.6V7.56h.733Zm1.467,0H8.067V7.56H8.8Zm0-1.763a.325.325,0,0,1-.329.323H2.529A.325.325,0,0,1,2.2,6.517V2.483a.325.325,0,0,1,.329-.323H8.472a.325.325,0,0,1,.328.323Zm0-5.077H8.067V.72H8.8Zm1.467,6.84H9.533V7.56h.733ZM9.533,1.44V.72h.733v.72Z" transform="translate(-12460 -5163)"/>
+								</svg>
 
-                                <svg xmlns="http://www.w3.org/2000/svg" class="code-popup" viewBox="-12442 -5163 11 9">
-                                    <defs>
-                                      <style>
-                                        .cls-1 {
-                                          fill: #fff;
-                                        }
-                                      </style>
-                                    </defs>
-                                    <g id="code-2" transform="translate(-12442 -5163)">
-                                      <path id="Path_63" data-name="Path 63" class="cls-1" d="M3.735,4.857a.686.686,0,0,0-.2-.49.736.736,0,0,0-.987,0L.2,6.689a.688.688,0,0,0,0,.979l2.34,2.321a.7.7,0,0,0,.987,0,.689.689,0,0,0,0-.979L1.685,7.179,3.531,5.348A.686.686,0,0,0,3.735,4.857Z" transform="translate(0 -2.678)"/>
-                                      <path id="Path_64" data-name="Path 64" class="cls-1" d="M23.613,6.689l-2.34-2.321a.735.735,0,0,0-.987,0,.689.689,0,0,0,0,.979l1.846,1.831L20.286,9.009a.689.689,0,0,0,0,.98.7.7,0,0,0,.986,0l2.34-2.321a.689.689,0,0,0,0-.979Z" transform="translate(-12.817 -2.678)"/>
-                                      <path id="Path_65" data-name="Path 65" class="cls-1" d="M13.266.024a.8.8,0,0,0-.949.551l-1.95,7.462a.771.771,0,0,0,.556.939A.787.787,0,0,0,11.117,9a.774.774,0,0,0,.751-.577L13.818.962a.756.756,0,0,0-.082-.583A.767.767,0,0,0,13.266.024Z" transform="translate(-6.6 0)"/>
-                                    </g>
-                                </svg>
-                                  
-                                <svg xmlns="http://www.w3.org/2000/svg" class="gif-popup" viewBox="-12424 -5163 10 9">
-                                    <defs>
-                                      <style>
-                                        .cls-1 {
-                                          fill: #fff;
-                                        }
-                                  
-                                        .cls-2 {
-                                          fill: #6448f0;
-                                          font-size: 4px;
-                                          font-family: Roboto-Bold, Roboto;
-                                          font-weight: 700;
-                                        }
-                                      </style>
-                                    </defs>
-                                    <g id="Group_203" data-name="Group 203" transform="translate(-12857 -5716)">
-                                      <rect id="Rectangle_25" data-name="Rectangle 25" class="cls-1" width="10" height="9" rx="4.5" transform="translate(433 553)"/>
-                                      <text id="GIF" class="cls-2" transform="translate(435 559)"><tspan x="0" y="0">GIF</tspan></text>
-                                    </g>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </form>
-    </div>
-    <div class="wrapper_popup-image">
-        <form action="" method="POST" class="flex">
-            <h3>Изображение</h3>
-            <p>Введите ссылку для из любого источника на изображение или же добавьте с ПК</p>
-            <input type="text" placeholder="Ссылка на изображение" class="inputFocus"> 
-            <p>Или</p>              
-            <div class="wrapFile">
-                <label for="tinput" class="labelFile button">Выберите файл</label>
-                <input name="img_2" type="file" size="1" class="tinput" id="tinput" hidden>
-            </div>
-            <div class="wrap-button flex">
-                <div class="button close-button_pop">Отменить</div>
-                <div class="button">Добавить</div>
-            </div>
-        </form>
-    </div>
+								<svg xmlns="http://www.w3.org/2000/svg" class="code-popup" viewBox="-12442 -5163 11 9">
+									<defs>
+									  <style>
+										.cls-1 {
+										  fill: #fff;
+										}
+									  </style>
+									</defs>
+									<g id="code-2" transform="translate(-12442 -5163)">
+									  <path id="Path_63" data-name="Path 63" class="cls-1" d="M3.735,4.857a.686.686,0,0,0-.2-.49.736.736,0,0,0-.987,0L.2,6.689a.688.688,0,0,0,0,.979l2.34,2.321a.7.7,0,0,0,.987,0,.689.689,0,0,0,0-.979L1.685,7.179,3.531,5.348A.686.686,0,0,0,3.735,4.857Z" transform="translate(0 -2.678)"/>
+									  <path id="Path_64" data-name="Path 64" class="cls-1" d="M23.613,6.689l-2.34-2.321a.735.735,0,0,0-.987,0,.689.689,0,0,0,0,.979l1.846,1.831L20.286,9.009a.689.689,0,0,0,0,.98.7.7,0,0,0,.986,0l2.34-2.321a.689.689,0,0,0,0-.979Z" transform="translate(-12.817 -2.678)"/>
+									  <path id="Path_65" data-name="Path 65" class="cls-1" d="M13.266.024a.8.8,0,0,0-.949.551l-1.95,7.462a.771.771,0,0,0,.556.939A.787.787,0,0,0,11.117,9a.774.774,0,0,0,.751-.577L13.818.962a.756.756,0,0,0-.082-.583A.767.767,0,0,0,13.266.024Z" transform="translate(-6.6 0)"/>
+									</g>
+								</svg>
+								  
+								<svg xmlns="http://www.w3.org/2000/svg" class="gif-popup" viewBox="-12424 -5163 10 9">
+									<defs>
+									  <style>
+										.cls-1 {
+										  fill: #fff;
+										}
+								  
+										.cls-2 {
+										  fill: #6448f0;
+										  font-size: 4px;
+										  font-family: Roboto-Bold, Roboto;
+										  font-weight: 700;
+										}
+									  </style>
+									</defs>
+									<g id="Group_203" data-name="Group 203" transform="translate(-12857 -5716)">
+									  <rect id="Rectangle_25" data-name="Rectangle 25" class="cls-1" width="10" height="9" rx="4.5" transform="translate(433 553)"/>
+									  <text id="GIF" class="cls-2" transform="translate(435 559)"><tspan x="0" y="0">GIF</tspan></text>
+									</g>
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+	<div class="wrapper_popup-image">
+		<form action="" method="POST" class="flex">
+			<h3>Изображение</h3>
+			<p>Введите ссылку для из любого источника на изображение или же добавьте с ПК</p>
+			<input type="text" placeholder="Ссылка на изображение" class="inputFocus"> 
+			<p>Или</p>              
+			<div class="wrapFile">
+				<label for="tinput" class="labelFile button">Выберите файл</label>
+				<input name="img_2" type="file" size="1" class="tinput" id="tinput" hidden>
+			</div>
+			<div class="wrap-button flex">
+				<div class="button close-button_pop">Отменить</div>
+				<div class="button">Добавить</div>
+			</div>
+		</form>
+	</div>
 </body>
 </html>
